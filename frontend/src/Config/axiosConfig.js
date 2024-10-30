@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://job-gate-repo-1-2.onrender.com/api", // Change this to your backend URL
+  baseURL: "https://job-gate-platform.onrender.com/api", // Change this to your backend URL
 });
 
 // Optional: Automatically add token if it's stored in localStorage or Redux store
