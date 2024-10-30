@@ -24,7 +24,7 @@ const ApplyToJobPage = () => {
     const fetchJob = async () => {
       try {
         const response = await axios.get(
-          `https://job-gate-repo-1-2.onrender.com/api/jobs/${jobId}`,
+          `https://job-gate-platform.onrender.com/api/jobs/${jobId}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -69,7 +69,7 @@ const ApplyToJobPage = () => {
 
     try {
       const response = await axios.post(
-        `https://job-gate-repo-1-2.onrender.com/api/jobs/${jobId}/apply`,
+        `https://job-gate-platform.onrender.com/api/jobs/${jobId}/apply`,
         form,
         {
           headers: {
