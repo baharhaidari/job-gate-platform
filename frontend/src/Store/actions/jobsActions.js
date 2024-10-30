@@ -7,7 +7,7 @@ export const fetchJobOffers =
       dispatch({ type: "FETCH_JOBS_START" }); // Set loading state
 
       const token = localStorage.getItem("token");
-      const response = await axios.get("https://job-gate-repo-1-2.onrender.com/api/jobs", {
+      const response = await axios.get("https://job-gate-platform.onrender.com/api/jobs", {
         params: { search, location },
         headers: {
           Authorization: `Bearer ${token}`,
