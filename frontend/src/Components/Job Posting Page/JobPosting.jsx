@@ -35,7 +35,7 @@ const JobPostingPage = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "https://job-gate-repo-1-2.onrender.com/api/post-job",
+        "https://job-gate-platform.onrender.com/api/post-job",
         formData,
         {
           headers: {
