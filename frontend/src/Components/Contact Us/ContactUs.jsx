@@ -21,7 +21,7 @@ const ContactPage = () => {
       const token = localStorage.getItem("token");
       // Send form data directly
       const response = await axios.post(
-        "https://job-gate-repo-1-2.onrender.com/api/contact",
+        "https://job-gate-platform.onrender.com/api/contact",
         formData, // <-- send formData directly, not wrapped in an object
         {
           headers: { Authorization: `Bearer ${token}` },
