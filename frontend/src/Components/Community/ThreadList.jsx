@@ -18,7 +18,7 @@ const ThreadList = () => {
       const token = localStorage.getItem("token");
       try {
         const res = await axios.get(
-          "https://job-gate-repo-1-2.onrender.com/api/community/threads",
+          "https://job-gate-platform.onrender.com/api/community/threads",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -36,7 +36,7 @@ const ThreadList = () => {
     const token = localStorage.getItem("token");
     try {
       await axios.post(
-        `https://job-gate-repo-1-2.onrender.com/api/community/like/${threadId}`,
+        `https://job-gate-platform.onrender.com/api/community/like/${threadId}`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -62,7 +62,7 @@ const ThreadList = () => {
 
     try {
       await axios.post(
-        `https://job-gate-repo-1-2.onrender.com/api/community/reply/${threadId}`,
+        `https://job-gate-platform.onrender.com/api/community/reply/${threadId}`,
         { content },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -84,7 +84,7 @@ const ThreadList = () => {
       const token = localStorage.getItem("token");
       try {
         const res = await axios.get(
-          `https://job-gate-repo-1-2.onrender.com/api/community/thread/${threadId}`,
+          `https://job-gate-platform.onrender.com/api/community/thread/${threadId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
