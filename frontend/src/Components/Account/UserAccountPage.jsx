@@ -176,7 +176,7 @@ const AccountPage = () => {
     if (confirmation) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`https://job-gate-repo-1-2.onrender.com/api/jobs/delete/${jobId}`, {
+        await axios.delete(`https://job-gate-platform.onrender.com/api/jobs/delete/${jobId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -207,7 +207,7 @@ const AccountPage = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `https://job-gate-repo-1-2.onrender.com/api/applications/${applicationId}/accept`,
+        `https://job-gate-platform.onrender.com/api/applications/${applicationId}/accept`,
         {},
         {
           headers: {
@@ -228,7 +228,7 @@ const AccountPage = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `https://job-gate-repo-1-2.onrender.com/api/applications/${applicationId}/reject`,
+        `https://job-gate-platform.onrender.com/api/applications/${applicationId}/reject`,
         {},
         {
           headers: {
