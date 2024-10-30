@@ -25,7 +25,7 @@ export default function FindTalents() {
   useEffect(() => {
     async function fetchTalents() {
       try {
-        const response = await axios.get("https://job-gate-repo-1-2.onrender.com/api/talents", {
+        const response = await axios.get("https://job-gate-platform.onrender.com/api/talents", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -43,7 +43,7 @@ export default function FindTalents() {
     debounce(async (query) => {
       try {
         const response = await axios.get(
-          "https://job-gate-repo-1-2.onrender.com/api/talents/search",
+          "https://job-gate-platform.onrender.com/api/talents/search",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -141,7 +141,7 @@ export default function FindTalents() {
             >
               <img
                 src={
-                  `https://job-gate-repo-1-2.onrender.com/${talent.profile_picture}` 
+                  `https://job-gate-platform.onrender.com/${talent.profile_picture}` 
                 }
                 alt={talent.fullname}
                 className="w-full h-56 object-cover"
