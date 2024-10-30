@@ -45,7 +45,7 @@ const RecievedApplications = ({
 
             <p className="mb-4">
               <a
-                href={`http://localhost:5000/${application.cv_path}`}
+                href={`https://job-gate-platform.onrender.com/${application.cv_path}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-green-700 font-medium underline"
