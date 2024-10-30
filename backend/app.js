@@ -57,7 +57,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://job-gate-platform.vercel.app",
+      "https://job-gate-platform.vercel.app/",
     ],
     credentials: true, // Ensure this if your requests require cookies or authentication headers
   })
