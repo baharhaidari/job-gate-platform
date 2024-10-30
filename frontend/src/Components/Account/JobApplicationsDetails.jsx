@@ -71,7 +71,7 @@ const JobApplicationDetails = () => {
         <p className="text-gray-700 mb-4">
           <span className="font-medium">CV:</span>{" "}
           <a
-            href={`http://localhost:5000/${application.cv_path}`}
+            href={`https://job-gate-platform.onrender.com/${application.cv_path}`}
             className="text-blue-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
