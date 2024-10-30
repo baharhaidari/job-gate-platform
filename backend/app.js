@@ -27,7 +27,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://job-gate-repo-1-y6fv.vercel.app", // frontend URL
+    origin: "https://job-gate-platform.vercel.app", // frontend URL
     methods: ["GET", "POST"], // allowed methods if needed
     credentials: true, // Required for cookie usage
   },
@@ -57,7 +57,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://job-gate-repo-1-y6fv.vercel.app",
+      "https://job-gate-platform.vercel.app",
     ],
     credentials: true, // Ensure this if your requests require cookies or authentication headers
   })
