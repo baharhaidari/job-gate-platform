@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1340px;
+  padding: 0 2rem;
+}
+
+/* h1,
+h2 {
+  font-family: , serif;
+} */
+
+nav a {
+  transition: all ease-in-out 0.2s;
+}
+
+.active {
+  color: #16a34a;
+}
+
+.footer li:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+::selection {
+  background-color: rgb(155, 231, 155);
+  color: black;
+}
+
+.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  background-color: green;
+}
+
+.swiper-horizontal .swiper-pagination-bullet {
+  background: green;
+}
+
+/* .heading {
+  font-size: 2.7rem;
+} */
+
+.heading {
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 50%; /* Adjust width of the line */
+  height: 2px; /* Adjust thickness of the line */
+  background-color: rgb(51 65 85); /* Adjust color of the line */
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%); /* Offset the line to truly center it */
+}
+
+.text__desc {
+  font-size: 1.02rem;
+}
+
+/* Slide-in and slide-out transitions */
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-out;
+}
+
+.slide-exit {
+  transform: translateX(0);
+}
+
+.slide-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-out;
+}
+
+@media screen and (max-width: 678px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1340px;
+    padding: 0 1rem;
+  }
+}
