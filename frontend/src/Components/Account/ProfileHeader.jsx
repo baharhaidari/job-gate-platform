@@ -6,7 +6,7 @@ function ProfileHeader({ user }) {
       <div className="size-36">
         <img
           className="w-full h-full rounded-full object-cover border-2 border-white"
-          src={`https://job-gate-repo-1-2.onrender.com/${user.profile_picture}`}
+          src={`https://job-gate-platform.onrender.com/${user.profile_picture}`}
           alt="Profile Picture"
         />
       </div>
